@@ -23,6 +23,26 @@ h1 {
   font-family: 'Rubik Dirt', cursive;
 }
 
+.seccion-oscura {
+  background: #1b1b32;
+  color: white;
+}
+
+.seccion-clara {
+  background: white;
+  color: black;
+}
+
+.seccion-titulo {
+  font-size: 2rem;
+  padding: 15px 0;
+  font-family: 'Rubik Dirt', cursive;
+}
+
+.seccion-texto {
+  font-size: 1.2rem;
+}
+
 /* Seccion Hero */
 
 .hero {
@@ -47,7 +67,61 @@ h1 {
 }
 
 
+/*Sobre mi*/
+.sobre-mi {
+  height: 500px;
+  padding: 10px;
+}
 
+.sobre-mi .contenedor {
+  max-width: 600px;
+  text-align: center;
+}
+
+/*Experiencia*/
+.experiencia {
+  padding: 40px 20px 60px 20px;
+}
+
+.experiencia .columna {
+  padding: 20px;
+  border: 2px solid #8080804d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover {
+  color: white;
+  background: #1b1b32;
+}
+
+
+.experiencia i {
+  font-size: 2.5rem;
+  color: #7ade30;
+  background: #0a0a23;
+  padding: 8px 19px;
+  border-radius: 50%;
+}
+
+.experiencia-titulo {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badges-contenedor {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badge {
+  margin: 5px;
+}
 
 /*Adaptable (responsive)*/
 
