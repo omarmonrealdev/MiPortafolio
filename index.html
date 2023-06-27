@@ -32,12 +32,9 @@
     <link rel="stylesheet" href="styles.css" />
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=optional" rel="stylesheet">
   </head>
   <body>
     <!-- Barra de navegacion     -->
@@ -66,18 +63,16 @@
             class="navbar-nav d-flex justify-content-center align-items-center"
           >
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Sobre mi</a
-              >
+              <a class="nav-link" aria-current="page" href="#sobre-mi">Sobre mi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Proyectos</a>
+              <a class="nav-link" href="#proyectos">Proyectos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Testimonios</a>
+              <a class="nav-link" href="#testimonios">Testimonios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="#contacto">Contacto</a>
             </li>
           </ul>
         </div>
@@ -108,7 +103,7 @@
     </section>
 
     <!-- Sobre mi -->
-    <section class="sobre-mi seccion-oscura">
+    <section class="sobre-mi seccion-oscura" id="sobre-mi">
       <div class="contenedor">
         <h2 class="seccion-titulo">Conoce a Omar Rosales</h2>
         <p class="seccion-texto">
@@ -166,7 +161,7 @@
     </section>
 
     <!-- Proyectos -->
-    <section class="proyectos-recientes seccion-clara">
+    <section class="proyectos-recientes seccion-clara" id="proyectos">
       <h2 class="seccion-titulo texto-negro">Mis proyectos recientes</h2>
       <h3 class="seccion-descripcion">Estos son algunos proyectos que he creado recientemente</h3>
       <!-- Galeria de proyectos -->
@@ -283,6 +278,152 @@
         </button>
       </a>
     </section>
+
+    <!-- Articulos -->
+    <section class="articulos justify-content-start">
+      <h2 class="seccion-titulo texto-negro">Artículos</h2>
+      <div class="card">
+        <div class="card-header">
+          Mas recientes
+        </div>
+        <ul class="list-group list-group-flush">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">Ciclos For y While, sintaxis y ciclos infinitos</li>
+          </a>
+          
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">dolor sit amet consectetur adipisicing elit. Commodi, rem!</li>
+          </a>
+
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          </a>
+
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+          </a>
+
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">Python, ventajas y sintaxis Lorem ipsum dolor sit amet.</li>
+          </a>
+        </ul>
+      </div>
+
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info">
+          Ver más Artículos
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </a>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonios seccion-clara" id="testimonios">
+      <h2 class="seccion-titulo">Testimonios</h2>
+      <h3 class="seccion-descripcion">Estos son algunos testimonios de mis clientes</h3>
+
+      <!-- Carrusel -->
+      <div id="testimonios-carrusel" class="carousel carousel-dark slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <img src="imagenes/cliente1.svg" alt="foto de cliente" class="testimonio-imagen rounded-circle">
+              <p class="testimonio-texto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem delectus tenetur, magnam animi asperiores praesentium odio quisquam nemo culpa excepturi.
+              </p>
+              <div class="testimonio-info">
+                <p class="cliente">Marco</p>
+                <p class="cargo">Gerente de proyectos en Corporativo Adelmarc</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img src="imagenes/cliente2.svg" alt="foto de cliente" class="testimonio-imagen rounded-circle">
+              <p class="testimonio-texto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem delectus tenetur, magnam animi asperiores praesentium odio quisquam nemo culpa excepturi.
+              </p>
+              <div class="testimonio-info">
+                <p class="cliente">AlexBe</p>
+                <p class="cargo">Directora y Terapeuta en AlexBe-Clinic</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img src="imagenes/cliente3.svg" alt="foto de cliente" class="testimonio-imagen rounded-circle">
+              <p class="testimonio-texto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem delectus tenetur, magnam animi asperiores praesentium odio quisquam nemo culpa excepturi.
+              </p>
+              <div class="testimonio-info">
+                <p class="cliente">Aaron</p>
+                <p class="cargo">Productor y Representante de DJ Abraxas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+
+    </section>
+
+    <!-- Contacto -->
+    <div class="contacto seccion-oscura" id="contacto">
+      <div class="container">
+        <div class="container text-center rectangulo d-flex justify-content-evenly">
+          <div class="row">
+            <div class="col-12 col-md-4 seccion-titulo">
+              ¡Hablemos!
+            </div>
+            
+            <div class="col-12 col-md-4 descrpcion">
+              Contactame para iniciar tu proyecto de Desarrollo Web y haré que tu visión se vuelva realidad.
+            </div>
+            
+            <div class="col-12 col-md-4">
+              <a href="mailto:omarmonros@gmail.com">
+                <button type="button">
+                  Contacto
+                  <i class="bi bi-envelope-check-fill"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pie de pagina (footer) -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+      <img class="footer-logo" src="imagenes/icono-blanco.svg" alt="logo del portafolio">
+      <p class="footer-texto text-center">Aprendo y creo todos los días.<br>Creemos un proyecto juntos</p>
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-youtube"></i>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="mailto:omarmonros@gmail.com" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-envelope"></i>
+        </a>
+      </div>
+
+      <p class="derechos-de-autor">Creado por Omar Rosales (2023) &#169</p>
+    </footer>
 
     <!-- Bootstrap -->
     <script
